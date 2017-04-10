@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "Helvetica";
+	src: url(../fonts/BebasNeue.woff),
+	url(../fonts/BebasNeue.woff2);
+}
+
+@font-face {
+	font-family: "Adventure";
+	src: url(../fonts/Adventure.woff),
+	url(../fonts/Adventure.woff2);
+}
+
+@font-face {
+	font-family: "Tahoma";
+	src: url(../fonts/Tahoma-Regular.woff),
+	url(../fonts/Tahoma-Regular.woff2);
+}
+
+$bebas: "Helvetica", Helvetica, Arial, sans-serif;
+$advent: "Adventure", TrueType, cursive, sans-serif;
+$tahoma: "Tahoma", Tahoma, Verdana, sans-serif;

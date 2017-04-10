@@ -1,0 +1,40 @@
+.footer {
+	position: relative;
+	padding: 1rem;
+
+	color: $white-txt;
+	font-family: $advent;
+
+	background: $bg-dark;
+}
+
+.footer__phone {
+	position: absolute;
+	top: 10px;
+
+	fill: $lime;
+}
+
+.footer__text {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.footer__call {
+	margin-left: 2.5rem;
+}
+
+.footer__link {
+	font-family: $bebas;
+	font-size: 1.6rem;
+}
+
+.footer__name {
+	padding: 1.3rem;
+
+	font-size: 2rem;
+}
+
+.footer__city{
+	padding: 1rem 0 0 0.5rem;
+}

@@ -1,0 +1,51 @@
+.main-price {
+	font-family: $tahoma;
+}
+
+.main-price__title1 {
+	padding: 2rem 1rem 1rem;
+
+	font-family: $bebas;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	text-shadow: 0 0 2px $lime;
+}
+
+.main-price__title2 {
+	padding: 1.1rem 1rem;
+	margin-top: 2rem;
+
+	font-size: 1.4rem;
+	text-align: center;
+	font-family: $bebas;
+	color: white;
+	line-height: 2rem;
+
+	background-color: $bg-blue;
+}
+
+.main-price__text {
+	padding: 1rem;
+	margin: 1rem 0 0;
+
+	font-family: $bebas;
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	text-align: center;
+
+	background: linear-gradient(to bottom, $light-grey, $grey);
+}
+
+.main-price__text-cost {
+	padding: 1rem;
+
+	font-family: $bebas;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	text-align: center;
+
+	background: linear-gradient(to bottom, $light-lime, $bg-lime);
+	border-top: 2px solid $darkgreen;
+	border-bottom: 2px solid $darkgreen;
+}
