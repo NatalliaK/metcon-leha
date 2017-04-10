@@ -1,0 +1,63 @@
+.table, .table__inner {
+
+	display: table;
+
+	background: #eaebf1;
+}
+
+.table {
+	margin: 1rem 3% 2rem;
+	width: 94%;
+
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+.table__caption {
+	padding: 0.5rem;
+
+	display: table-caption;
+
+	text-align: center;
+}
+
+.table__row {
+	display: table-row;
+}
+
+.table__inner_wrap, .table__price-col {
+	display: table-cell;
+}
+
+.table__inner {
+	width: 100%;
+}
+
+.table__price-col {
+	text-align: center;
+}
+
+.table__cell {
+	padding: 0.7rem 0.5rem;
+
+	display: table-cell;
+
+	font-size: 0.7rem;
+
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+.table__price-size {
+	padding: 0.59rem;
+
+	background: #ccc;
+}
+
+.table__price-cost {
+	padding: 0.65rem;
+
+	color: $lime;
+
+	background-color: #585257;
+}
