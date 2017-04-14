@@ -1,6 +1,6 @@
 .footer {
 	position: relative;
-	padding: 1rem;
+	padding: 1rem 0;
 
 	color: $white-txt;
 	font-family: $advent;
@@ -16,12 +16,17 @@
 }
 
 .footer__text {
+	padding-left: 1rem;
+
 	font-size: 1.5rem;
-	line-height: 2rem;
 }
 
 .footer__call {
 	margin-left: 2.5rem;
+
+	display: block;
+
+	color: $lime;
 }
 
 .footer__link {
@@ -32,9 +37,24 @@
 .footer__name {
 	padding: 1.3rem;
 
-	font-size: 2rem;
+	font-size: 1.7rem;
+	font-family: $bebas;
+}
+
+.footer__reg {
+	padding: 0.7rem 1.5rem;
+}
+
+.footer__city-wrap {
+	padding-left: 1rem;
+
+	border-top: 1px solid $lime;
 }
 
 .footer__city{
-	padding: 1rem 0 0 0.5rem;
+	padding: 1rem 0.5rem 0;
+
+	display: inline-block;
+
+	font-size: 1.3rem;
 }
