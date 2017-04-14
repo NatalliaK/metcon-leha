@@ -34,7 +34,7 @@
 
 	font-size: 40px;
 
-	background-color: rgba(248, 246, 242, 0.5);
+	background: rgba(248, 246, 242, 0.5);
 	background-repeat: no-repeat;
 	border-radius: 50%;
 	cursor: pointer;
@@ -104,5 +104,5 @@
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
 #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
 #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
-	color: $light-lime;
+	color: $lime;
 }
