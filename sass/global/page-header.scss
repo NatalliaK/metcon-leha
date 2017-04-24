@@ -4,7 +4,6 @@
 }
 
 .page-header__bg {
-	height: 324px;
 	width: 100%;
 
 	background-color: $bg-blue;
@@ -38,4 +37,18 @@
 	background-size: cover;
 	border-bottom: 1px solid white;
 	border-top: 1px solid white;
+}
+
+@media (min-width: $big-mob) {
+	.page-header__title2 {
+		padding: 1rem;
+
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width: $tablet) {
+	.page-header__title2 {
+		background: linear-gradient(to bottom, $bg-dark, $grey, $bg-dark);
+	}
 }

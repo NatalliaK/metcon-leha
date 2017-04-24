@@ -10,13 +10,13 @@
 
 .footer__phone {
 	position: absolute;
-	top: 10px;
+	top: 7px;
 
 	fill: $lime;
 }
 
 .footer__text {
-	padding-left: 1rem;
+	padding-left: 2%;
 
 	font-size: 1.5rem;
 }
@@ -48,7 +48,7 @@
 .footer__city-wrap {
 	padding-left: 1rem;
 
-	border-top: 1px solid $lime;
+	border-top: 2px dotted $lime;
 }
 
 .footer__city{
@@ -57,4 +57,38 @@
 	display: inline-block;
 
 	font-size: 1.3rem;
+}
+
+@media (min-width: $big-mob) {
+	.footer__call {
+		font-size: 1.7rem;
+	}
+
+	.footer__link {
+		font-size: 1.9rem;
+	}
+
+	.footer__name {
+		font-size: 2.1rem;
+	}
+
+	.footer__reg {
+		font-size: 1.2rem;
+	}
+
+	.footer__city {
+		font-size: 1.7rem;
+	}
+}
+
+@media (min-width: $tablet-land) {
+	.footer__text,
+	.footer__reg,
+	.footer__city-wrap {
+		padding-left: 4%;
+	}
+
+	.footer__city {
+		padding-left: 0;
+	}
 }

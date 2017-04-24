@@ -18,7 +18,7 @@
 			</div>
 			<ul class="main-nav__list">
 				<li class="main-nav__item"><a href="index.html">Главная</a></li>
-				<li class="main-nav__item"><a href="canory.html">Навесы</a></li>
+				<li class="main-nav__item"><a href="canopy.html">Навесы</a></li>
 				<li class="main-nav__item"><a href="penthouse.html">Козырьки</a></li>
 				<li class="main-nav__item"><a href="fence.html">Заборы</a></li>
 				<li class="main-nav__item"><a href="hammock.html">Гамаки</a></li>
@@ -27,9 +27,9 @@
 		</nav>
 	</header>
 	<main class="main-price">
-		<h1 class="main-price__title1">
+		<h2 class="main-price__title2">
 			Изготавливаем навесы, козырьки, металлические заборы и гамаки по индивидуальным пожеланиям любой формы и сложности.
-		</h1>
+		</h2>
 		<p class="main-price__text">Цена изделия зависит от краски, качества и толщины поликарбоната, сечения и толщины труб, сложности работы.</p>
 		<p class="main-price__text-cost">
 			Цена навеса и козырька от 70руб/м<sub>2</sub>.
@@ -39,7 +39,7 @@
 			<source media="(min-width: 768px)" srcset="img/canopy3-tablet.jpg">
 			<img src="img/canopy3-mobile.jpg"  alt="phone" class="page-header__img">
 		</picture>
-		<h2 class="main-price__title2">Примерный расчет стоимости навеса</h2>
+		<h3 class="main-price__title3">Примерный расчет стоимости навеса</h3>
 		<div class="table">
 			<div class="table__price-col">
 				<p class="table__price-size">3,5м&times;6м</p>
@@ -139,7 +139,7 @@
 			</div>
 		</div>
 		<p class="main-price__text-cost">
-			Стоимость забора из профлиста высотой 1,8 метра составляет от 60руб/м<sub>2</sub>.
+			Стоимость забора из профлиста высотой 1,8 метра составляет от 60руб/м.п.
 		</p>
 		<picture>
 			<source media="(min-width: 1200px)" srcset="img/fence-size-desk.jpg">
@@ -198,21 +198,6 @@
 		</div>
 	</footer>
 
-	<script>
-		var navMain = document.querySelector('.main-nav');
-		var navToggle = document.querySelector('.main-nav__toggle');
-
-		navMain.classList.remove('main-nav--no-js');
-
-		navToggle.addEventListener('click', function() {
-			if (navMain.classList.contains('main-nav--closed')) {
-				navMain.classList.remove('main-nav--closed');
-				navMain.classList.add('main-nav--opened');
-			} else {
-				navMain.classList.add('main-nav--closed');
-				navMain.classList.remove('main-nav--opened');
-			}
-		});
-	</script>
+	<script src="nav-js.js"></script>
 </body>
 </html>
