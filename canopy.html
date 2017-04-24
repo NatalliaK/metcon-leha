@@ -27,14 +27,15 @@
 	</nav>
 </header>
 <main class="product">
-	<h1 class="product__title1">Навесы из поликарбоната</h1>
-	<p class="product__text">Навесы из поликарбоната представляют собой конструкции, состоящие из металлического каркаса и покрытия из сотового поликарбоната. Это легкое, но прочное покрытие, отличающееся хорошей световой проводимостью. </p>
-	<p class="product__text">Помимо прозрачного варианта возможны различные цветовые решения.</p>
-	<p class="product__text">Конструкции из этого материала не только надежны, но и очень красивы. Навесы из поликарбоната прекрасно впишутся в общий архитектурный стиль и придадут современный вид любому зданию, будь то Ваш дом, гараж, офис или двор. А крепкая конструкция станет верной защитой от осадков, грязи и падающих предметов на долгие годы.</p>
+	<h2 class="product__title2">Навесы из поликарбоната</h2>
+	<div class="product__text-wrap">
+		<p class="product__text  product__text--big">Навесы из поликарбоната представляют собой конструкции, состоящие из металлического каркаса и покрытия из сотового поликарбоната. Это легкое, но прочное покрытие, отличающееся хорошей световой проводимостью. </p>
+		<p class="product__text  product__text--small">Помимо прозрачного варианта возможны различные цветовые решения.</p>
+		<p class="product__text  product__text--big">Конструкции из этого материала не только надежны, но и очень красивы. Навесы из поликарбоната прекрасно впишутся в общий архитектурный стиль и придадут современный вид любому зданию, будь то Ваш дом, гараж, офис или двор. А крепкая конструкция станет верной защитой от осадков, грязи и падающих предметов на долгие годы.</p>
+	</div>
 	<div class="product__wrap-inner">
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/canopy-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/canopy-tablet.jpg">
 				<img src="img/canopy-mobile.jpg"  alt="canopy" class="product__img">
 			</picture>
@@ -43,7 +44,6 @@
 
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/canopy3-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/canopy3-tablet.jpg">
 				<img src="img/canopy3-mobile.jpg"  alt="canopy" class="product__img">
 			</picture>
@@ -52,7 +52,6 @@
 
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/canopy4-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/canopy4-tablet.jpg">
 				<img src="img/canopy4-mobile.jpg"  alt="canopy" class="product__img">
 			</picture>
@@ -60,7 +59,6 @@
 		</div>
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/canopy5-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/canopy5-tablet.jpg">
 				<img src="img/canopy5-mobile.jpg"  alt="canopy" class="product__img">
 			</picture>
@@ -68,7 +66,6 @@
 		</div>
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/canopy6-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/canopy6-tablet.jpg">
 				<img src="img/canopy6-mobile.jpg"  alt="canopy" class="product__img">
 			</picture>
@@ -76,7 +73,6 @@
 		</div>
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/canopy7-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/canopy7-tablet.jpg">
 				<img src="img/canopy7-mobile.jpg"  alt="canopy" class="product__img">
 			</picture>
@@ -84,7 +80,6 @@
 		</div>
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/canopy8-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/canopy8-tablet.jpg">
 				<img src="img/canopy8-mobile.jpg"  alt="canopy" class="product__img">
 			</picture>
@@ -92,7 +87,6 @@
 		</div>
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/canopy9-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/canopy9-tablet.jpg">
 				<img src="img/canopy9-mobile.jpg"  alt="canopy" class="product__img">
 			</picture>
@@ -144,21 +138,6 @@
 		<address class="footer__city">Минск</address>
 	</div>
 </footer>
-<script>
-	var navMain = document.querySelector('.main-nav');
-	var navToggle = document.querySelector('.main-nav__toggle');
-
-	navMain.classList.remove('main-nav--no-js');
-
-	navToggle.addEventListener('click', function() {
-		if (navMain.classList.contains('main-nav--closed')) {
-			navMain.classList.remove('main-nav--closed');
-			navMain.classList.add('main-nav--opened');
-		} else {
-			navMain.classList.add('main-nav--closed');
-			navMain.classList.remove('main-nav--opened');
-		}
-	});
-</script>
+<script src="nav-js.js"></script>
 </body>
 </html>

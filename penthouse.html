@@ -18,7 +18,7 @@
 		</div>
 		<ul class="main-nav__list">
 			<li class="main-nav__item"><a href="index.html">Главная</a></li>
-			<li class="main-nav__item"><a href="canory.html">Навесы</a></li>
+			<li class="main-nav__item"><a href="canopy.html">Навесы</a></li>
 			<li class="main-nav__item"><a>Козырьки</a></li>
 			<li class="main-nav__item"><a href="fence.html">Заборы</a></li>
 			<li class="main-nav__item"><a href="hammock.html">Гамаки</a></li>
@@ -27,7 +27,7 @@
 	</nav>
 </header>
 <main class="product">
-	<h1 class="product__title1">Козырьки из поликарбоната</h1>
+	<h2 class="product__title2">Козырьки из поликарбоната</h2>
 
 	<p class="product__text">Умело сконструированный козырек, не только удачно подчеркнет совершенства Вашего дома, но и станет надежным защитником от осадков, грязи и прочих нежелательных элементов.</p>
 	<div class="product__wrap-inner">
@@ -125,21 +125,6 @@
 		<address class="footer__city">Минск</address>
 	</div>
 </footer>
-<script>
-	var navMain = document.querySelector('.main-nav');
-	var navToggle = document.querySelector('.main-nav__toggle');
-
-	navMain.classList.remove('main-nav--no-js');
-
-	navToggle.addEventListener('click', function() {
-		if (navMain.classList.contains('main-nav--closed')) {
-			navMain.classList.remove('main-nav--closed');
-			navMain.classList.add('main-nav--opened');
-		} else {
-			navMain.classList.add('main-nav--closed');
-			navMain.classList.remove('main-nav--opened');
-		}
-	});
-</script>
+<script src="nav-js.js"></script>
 </body>
 </html>

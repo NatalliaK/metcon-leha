@@ -2,7 +2,7 @@
 	font-family: $tahoma;
 }
 
-.main-price__title1 {
+.main-price__title2 {
 	padding: 2rem 1rem 1rem;
 
 	font-family: $bebas;
@@ -12,7 +12,7 @@
 	text-shadow: 0 0 2px $lime;
 }
 
-.main-price__title2 {
+.main-price__title3 {
 	padding: 1.1rem 1rem;
 	margin-top: 2rem;
 
@@ -48,4 +48,18 @@
 	background: linear-gradient(to bottom, $light-lime, $bg-lime);
 	border-top: 2px solid $darkgreen;
 	border-bottom: 2px solid $darkgreen;
+}
+
+.main-price__img {
+	width: 100%;
+}
+
+@media (min-width: $tablet-land) {
+	.main-price__title2 {
+		padding: 2rem 16rem 1rem;
+	}
+
+	.main-price__text-cost {
+		font-size: 1.4rem;
+	}
 }

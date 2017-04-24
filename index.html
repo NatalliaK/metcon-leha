@@ -18,7 +18,7 @@
 			</div>
 			<ul class="main-nav__list">
 				<li class="main-nav__item"><a>Главная</a></li>
-				<li class="main-nav__item"><a href="canory.html">Навесы</a></li>
+				<li class="main-nav__item"><a href="canopy.html">Навесы</a></li>
 				<li class="main-nav__item"><a href="penthouse.html">Козырьки</a></li>
 				<li class="main-nav__item"><a href="fence.html">Заборы</a></li>
 				<li class="main-nav__item"><a href="hammock.html">Гамаки</a></li>
@@ -27,7 +27,7 @@
 		</nav>
 		<div class="page-header__bg  carousel">
 			<div class="carousel__list">
-				<input class="slider__input  slider__slide1" type="radio" name="carousel" id="carousel-1" aria-hidden="true" hidden="">
+				<input class="slider__input  slider__slide1" type="radio" name="carousel" id="carousel-1" hidden="" checked="checked">
 				<div class="carousel__item  carousel__item--1">
 					<h2 class="page-header__title2">Навесы</h2>
 					<div class="page-header__img-wrap">
@@ -39,7 +39,7 @@
 					</div>
 				</div>
 
-				<input class="slider__input  slider__slide2" type="radio" name="carousel" id="carousel-2" aria-hidden="true" hidden="" checked="checked">
+				<input class="slider__input  slider__slide2" type="radio" name="carousel" id="carousel-2" hidden="">
 				<div class="carousel__item  carousel__item--2">
 					<h2 class="page-header__title2">Козырьки</h2>
 					<div class="page-header__img-wrap">
@@ -51,7 +51,7 @@
 					</div>
 				</div>
 
-				<input class="slider__input  slider__slide3" type="radio" name="carousel" id="carousel-3" aria-hidden="true" hidden="">
+				<input class="slider__input  slider__slide3" type="radio" name="carousel" id="carousel-3" hidden="">
 				<div class="carousel__item  carousel__item--3">
 					<h2 class="page-header__title2">Заборы</h2>
 					<div class="page-header__img-wrap">
@@ -63,7 +63,7 @@
 					</div>
 				</div>
 
-				<input class="slider__input  slider__slide4" type="radio" name="carousel" id="carousel-4" aria-hidden="true" hidden="">
+				<input class="slider__input  slider__slide4" type="radio" name="carousel" id="carousel-4" hidden="">
 				<div class="carousel__item  carousel__item--4">
 					<h2 class="page-header__title2">Заборы</h2>
 					<div class="page-header__img-wrap">
@@ -75,7 +75,7 @@
 					</div>
 				</div>
 
-				<input class="slider__input  slider__slide5" type="radio" name="carousel" id="carousel-5" aria-hidden="true" hidden="">
+				<input class="slider__input  slider__slide5" type="radio" name="carousel" id="carousel-5" hidden="">
 				<div class="carousel__item  carousel__item--5">
 					<h2 class="page-header__title2">Гамаки</h2>
 					<div class="page-header__img-wrap">
@@ -118,8 +118,7 @@
 	</header>
 
 	<main class="main">
-		<p class="main__text">
-			Изготавливаем изделия из поликабоната, металлопрофиля, металлоштакетника по индивидуальным пожеланиям любой формы и сложности.</p>
+		<p class="main__text">Оказываем услуги по изготовлению металлических изделий любой сложности. Обратившись к нам, Вы можете заказать любые конструкции из металла, выполненные по индивидуальному проекту.</p>
 		<p class="main__text">Вы получаете возможность красиво и качественно оформить свой дом, офис или магазин по вполне приемлемым ценам.
 		</p>
 		<p class="main__text">Современная конструкция придаст зданию неповторимый вид и будет радовать Вас долгое время.</p>
@@ -169,21 +168,6 @@
 		</div>
 	</footer>
 
-	<script>
-		var navMain = document.querySelector('.main-nav');
-		var navToggle = document.querySelector('.main-nav__toggle');
-
-		navMain.classList.remove('main-nav--no-js');
-
-		navToggle.addEventListener('click', function() {
-			if (navMain.classList.contains('main-nav--closed')) {
-				navMain.classList.remove('main-nav--closed');
-				navMain.classList.add('main-nav--opened');
-			} else {
-				navMain.classList.add('main-nav--closed');
-				navMain.classList.remove('main-nav--opened');
-			}
-		});
-	</script>
+	<script src="nav-js.js"></script>
 </body>
 </html>

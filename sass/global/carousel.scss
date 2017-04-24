@@ -74,13 +74,15 @@
 .carousel-indicators {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 0.3rem;
 	position: absolute;
-	bottom: 2%;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	text-align: center;
 	z-index: 10;
+
+	background: linear-gradient(to bottom, black, $dark-grey, black);
 }
 
 .carousel-indicators li {
@@ -105,4 +107,10 @@
 #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
 #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
 	color: $lime;
+}
+
+@media (min-width: $big-mob) {
+	.carousel-indicators {
+		padding: 0.5rem;
+	}
 }

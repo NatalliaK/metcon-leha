@@ -18,15 +18,15 @@
 	border-bottom: 1px solid $white-txt;
 	box-shadow: 0 0 3px $white-txt;
 
-h1 {
-	padding-right: 1.3rem;
+	h1 {
+		padding-right: 1.3rem;
 
-	font-family: $advent;
-	font-size: 2.2rem;
-	text-shadow: 0 0 5px black;
-	color: $light-lime;
-	vertical-align: middle;
-}
+		font-family: $advent;
+		font-size: 2.2rem;
+		text-shadow: 0 0 5px black;
+		color: $light-lime;
+		vertical-align: middle;
+	}
 }
 
 .main-nav__item {
@@ -75,10 +75,10 @@ a {
 	border: none;
 	outline: transparent;
 
-&:hover {
-	 top: 33px;
-	 right: 20px;
- }
+	&:hover {
+		top: 33px;
+		right: 20px;
+	}
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -166,4 +166,91 @@ a {
 
 .main-nav--no-js .main-nav__item {
 	display: block;
+}
+
+@media (min-width: $big-mob) {
+	.main-nav__top-block{
+
+		h1 {
+			font-size: 2.8rem;
+		}
+	}
+
+	.main-nav__toggle {
+		width: 50px;
+	}
+
+	.main-nav--closed .main-nav__toggle::before {
+		width: 50px;
+	}
+
+	.main-nav__item {
+		a {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+@media (min-width: $tablet) {
+	.main-nav {
+		padding: 0 2.5%;
+
+		display: flex;
+		justify-content: space-between;
+
+		border-bottom: 3px dotted $grey;
+	}
+
+	.main-nav__top-block {
+		border-bottom: none;
+		box-shadow: none;
+
+		h1 {
+			padding-right: 0;
+
+			color: lime;
+		}
+	}
+
+	.main-nav__toggle {
+		display: none;
+	}
+
+	.main-nav__list {
+		display: flex;
+	}
+
+	.main-nav__item {
+		height: 100%;
+
+		border-bottom: none;
+		border-right: 3px dotted $dark-grey;
+		box-shadow: none;
+
+		&:first-of-type {
+			 border-left: 3px dotted $dark-grey;
+		}
+
+		a {
+			padding: 0 0.4rem;
+			height: inherit;
+			line-height: 92px;
+		}
+	}
+
+	.main-nav--closed .main-nav__item {
+		display: block;
+	}
+}
+
+@media (min-width: $tablet-land) {
+	.main-nav {
+		padding: 0 3.5%;
+	}
+
+	.main-nav__item {
+		a {
+			padding: 0 1rem;
+		}
+	}
 }

@@ -18,7 +18,7 @@
 		</div>
 		<ul class="main-nav__list">
 			<li class="main-nav__item"><a href="index.html">Главная</a></li>
-			<li class="main-nav__item"><a href="canory.html">Навесы</a></li>
+			<li class="main-nav__item"><a href="canopy.html">Навесы</a></li>
 			<li class="main-nav__item"><a href="penthouse.html">Козырьки</a></li>
 			<li class="main-nav__item"><a>Заборы</a></li>
 			<li class="main-nav__item"><a href="hammock.html">Гамаки</a></li>
@@ -27,14 +27,13 @@
 	</nav>
 </header>
 <main class="product">
-	<h1 class="product__title1">Заборы</h1>
-	<h2 class="product__title2">Заборы из металлопрофиля</h2>
+	<h2 class="product__title2">Заборы</h2>
+	<h3 class="product__title3">Заборы из металлопрофиля</h3>
 	<p class="product__text">Забор из металлопрофиля позволяет максимально скрыть территорию, уменьшить шум с улицы,  защититься от ветра.  Такие заборы отлично подходят для частного домовладения, для дачи, а также для ограждения административных и промышленных объектов.</p>
 
 	<div class="product__wrap-inner">
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/fence_iron-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/fence_iron-tablet.jpg">
 				<img src="img/fence_iron-mobile.jpg"  alt="fence" class="product__img">
 			</picture>
@@ -42,12 +41,11 @@
 		</div>
 	</div>
 
-	<h2 class="product__title2">Заборы из поликарбоната</h2>
+	<h3 class="product__title3">Заборы из поликарбоната</h3>
 	<p class="product__text">Забор из поликарбоната  - выгодный и недорогой вариант ограждения территории.</p>
 	<div class="product__wrap-inner">
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/fence_poly1-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/fence_poly1-tablet.jpg">
 				<img src="img/fence_poly1-mobile.jpg"  alt="fence" class="product__img">
 			</picture>
@@ -55,7 +53,6 @@
 		</div>
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/fence_poly2-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/fence_poly2-tablet.jpg">
 				<img src="img/fence_poly2-mobile.jpg"  alt="fence" class="product__img">
 			</picture>
@@ -63,13 +60,12 @@
 		</div>
 	</div>
 
-	<h2 class="product__title2">Заборы из металлоштакетника</h2>
+	<h3 class="product__title3">Заборы из металлоштакетника</h3>
 	<p class="product__text">Забор из металлических штакет сочетает в себе преимущества деревянного забора и забора из профнастила.
 		Эстетика и проветриваемость от деревянного и надежность универсальность и долговечность от забора из профнастила.</p>
 	<div class="product__wrap-inner">
 		<div class="product__img-wrap">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/fence_iron2-desk.jpg">
 				<source media="(min-width: 768px)" srcset="img/fence_iron2-tablet.jpg">
 				<img src="img/fence_iron2-mobile.jpg"  alt="fence" class="product__img">
 			</picture>
@@ -121,21 +117,6 @@
 		<address class="footer__city">Минск</address>
 	</div>
 </footer>
-<script>
-	var navMain = document.querySelector('.main-nav');
-	var navToggle = document.querySelector('.main-nav__toggle');
-
-	navMain.classList.remove('main-nav--no-js');
-
-	navToggle.addEventListener('click', function() {
-		if (navMain.classList.contains('main-nav--closed')) {
-			navMain.classList.remove('main-nav--closed');
-			navMain.classList.add('main-nav--opened');
-		} else {
-			navMain.classList.add('main-nav--closed');
-			navMain.classList.remove('main-nav--opened');
-		}
-	});
-</script>
+<script src="nav-js.js"></script>
 </body>
 </html>
