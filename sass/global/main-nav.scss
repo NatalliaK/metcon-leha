@@ -195,10 +195,15 @@ a {
 	.main-nav {
 		padding: 0 2.5%;
 
+		border-bottom: 3px dotted $grey;
+	}
+
+	.main-nav__wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+
 		display: flex;
 		justify-content: space-between;
-
-		border-bottom: 3px dotted $grey;
 	}
 
 	.main-nav__top-block {
