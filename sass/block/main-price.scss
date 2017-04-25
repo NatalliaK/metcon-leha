@@ -55,11 +55,19 @@
 }
 
 @media (min-width: $tablet-land) {
+	.main-price {
+		text-align: center;
+	}
+
 	.main-price__title2 {
 		padding: 2rem 16rem 1rem;
 	}
 
 	.main-price__text-cost {
 		font-size: 1.4rem;
+	}
+
+	.main-price__img {
+		max-width: 1200px;
 	}
 }

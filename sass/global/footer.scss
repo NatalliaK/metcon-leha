@@ -1,5 +1,4 @@
 .footer {
-	position: relative;
 	padding: 1rem 0;
 
 	color: $white-txt;
@@ -8,9 +7,16 @@
 	background: $bg-dark;
 }
 
+.footer__wrap-text {
+	margin: 0 auto;
+	max-width: 1200px;
+
+	position: relative;
+}
+
 .footer__phone {
 	position: absolute;
-	top: 7px;
+	top: -7px;
 
 	fill: $lime;
 }
@@ -49,6 +55,11 @@
 	padding-left: 1rem;
 
 	border-top: 2px dotted $lime;
+
+	div {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
 }
 
 .footer__city{
@@ -84,11 +95,11 @@
 @media (min-width: $tablet-land) {
 	.footer__text,
 	.footer__reg,
-	.footer__city-wrap {
+	.footer__city:first-of-type {
 		padding-left: 4%;
 	}
 
-	.footer__city {
+	.footer__city-wrap, .footer__city {
 		padding-left: 0;
 	}
 }

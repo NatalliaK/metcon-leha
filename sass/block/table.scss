@@ -61,3 +61,11 @@
 
 	background-color: #585257;
 }
+
+@media (min-width: $tablet-land) {
+	.table {
+		max-width: 1200px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
