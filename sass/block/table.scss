@@ -19,6 +19,17 @@
 	display: table-caption;
 
 	text-align: center;
+
+	&--penth {
+		 border: 1px solid #ccc;
+
+		font-family: $bebas;
+		background: #eaebf1;
+	}
+}
+
+.table__wrap-penth {
+	padding: 1rem 1rem 2rem;
 }
 
 .table__row {
@@ -43,6 +54,7 @@
 	display: table-cell;
 
 	font-size: 0.7rem;
+	text-align: center;
 
 	border: 1px solid #ccc;
 	border-collapse: collapse;
@@ -67,5 +79,18 @@
 		max-width: 1200px;
 		margin-right: auto;
 		margin-left: auto;
+	}
+
+	.table__caption {
+
+		&--penth {
+			font-size: 1.5rem;
+		}
+	}
+
+	.table__cell {
+		&--penth {
+			font-size: 1.2rem;
+		}
 	}
 }

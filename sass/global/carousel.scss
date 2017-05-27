@@ -25,7 +25,7 @@
 
 .carousel-control {
 	position: absolute;
-	top: 50%;
+	top: 46vw;
 	z-index: 10;
 
 	display: none;
@@ -67,7 +67,8 @@
 #carousel-2:checked ~ .control-2,
 #carousel-3:checked ~ .control-3,
 #carousel-4:checked ~ .control-4,
-#carousel-5:checked ~ .control-5 {
+#carousel-5:checked ~ .control-5,
+#carousel-6:checked ~ .control-6 {
 	display: block;
 }
 
@@ -75,7 +76,6 @@
 	list-style: none;
 	margin: 0;
 	padding: 0.3rem;
-	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -105,12 +105,39 @@
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
 #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
-#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
+#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
+#carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet {
 	color: $lime;
 }
 
 @media (min-width: $big-mob) {
 	.carousel-indicators {
 		padding: 0.5rem;
+	}
+}
+
+@media (min-width: $tablet-land) {
+	.carousel__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.carousel__item {
+		position: static;
+		opacity: 1;
+		display: flex;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#carousel-1:checked ~ .control-1,
+	#carousel-2:checked ~ .control-2,
+	#carousel-3:checked ~ .control-3,
+	#carousel-4:checked ~ .control-4,
+	#carousel-5:checked ~ .control-5,
+	#carousel-6:checked ~ .control-6,
+	.carousel-indicators {
+		display: none;
 	}
 }
