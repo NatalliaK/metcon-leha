@@ -2,7 +2,7 @@
 	margin-bottom: 1rem;
 }
 
-.product__title2 {
+.product__title1 {
 	margin: 0 0 1rem;
 	padding: 1.5rem;
 
@@ -15,7 +15,7 @@
 	background: linear-gradient(to bottom, $dark-grey, $light-grey, $dark-grey);
 }
 
-.product__title3 {
+.product__title2 {
 	margin: 1rem auto;
 	padding: 0.6rem;
 
@@ -129,12 +129,29 @@
 	}
 }
 
+.product__footer {
+
+	p {
+		margin: 2% 0;
+		padding: 1.5rem;
+
+		font-family: "Helvetica", Helvetica, Arial, sans-serif;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		text-shadow: 0 0 3px purple;
+		text-align: center;
+		color: $light-lime;
+		background: #1b0f19;
+		box-shadow: 0 0 5px #696568;
+	}
+}
+
 @media (min-width: $big-mob) {
-	.product__title2 {
+	.product__title1 {
 		font-size: 2rem;
 	}
 
-	.product__title3 {
+	.product__title2 {
 		padding: 0.7rem;
 
 		font-size: 1.5rem;
@@ -158,33 +175,44 @@
 }
 
 @media (min-width: $tablet) {
-	.product__title2 {
+	.product__title1 {
 		text-shadow: $purple 1px 1px 0,
 		$purple -1px -1px 0,
 		$purple -1px 1px 0,
 		$purple 1px -1px 0,
 		white 0 0 5px;
 	}
+
+	.product__footer {
+
+		p {
+			font-size: 1.3rem;
+			line-height: 2rem;
+		}
+	}
 }
 
 @media (min-width: $tablet-land) {
 	.product__text-wrap,
 	.product__wrap-inner {
-		margin: 0 auto;
+		margin-top: 0;
+		margin-bottom: 0;
 		max-width: 1200px;
+	}
+
+	.product__title1 {
+		margin-bottom: 2rem;
 	}
 
 	.product__text-wrap {
 		padding: 0 3%;
-		margin-bottom: 1rem;
+		margin-bottom: 3rem;
 
 		display: flex;
 		justify-content: space-between;
 	}
 
 	.product__text {
-		margin-left: auto;
-		margin-right: auto;
 		max-width: 1200px;
 
 		box-sizing: border-box;
@@ -198,11 +226,19 @@
 		}
 
 		&--big {
-		 flex-basis: 36%;
+		 flex-basis: 34%;
 		}
 
 		&--small {
-		 flex-basis: 14%;
+		 flex-basis: 21%;
+		}
+
+		ul {
+			text-align: left;
+		}
+
+		li {
+			list-style: square inside;
 		}
 	}
 
@@ -212,19 +248,23 @@
 	}
 
 	.product__img-wrap {
-		margin: 2rem auto;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 
 		flex-basis: 40%;
 
 		&:hover {
-			margin: 2rem auto;
+			 margin-top: 2rem;
+			 margin-bottom: 2rem;
 		}
 
 		&:first-of-type {
-			margin: 2rem auto;
+			 margin-top: 2rem;
+			 margin-bottom: 2rem;
 
 			&:hover {
-				margin: 2rem auto;
+				 margin-top: 2rem;
+				 margin-bottom: 2rem;
 			}
 		}
 	}

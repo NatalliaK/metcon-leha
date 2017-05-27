@@ -17,16 +17,16 @@
 
 	border-bottom: 1px solid $white-txt;
 	box-shadow: 0 0 3px $white-txt;
+}
 
-	h1 {
-		padding-right: 1.3rem;
+.main-nav__logo {
+	padding-right: 1.3rem;
 
-		font-family: $advent;
-		font-size: 2.2rem;
-		text-shadow: 0 0 5px black;
-		color: $light-lime;
-		vertical-align: middle;
-	}
+	font-family: $advent;
+	font-size: 2.2rem;
+	text-shadow: 0 0 5px black;
+	color: $light-lime;
+	vertical-align: middle;
 }
 
 .main-nav__item {
@@ -35,22 +35,22 @@
 
 	line-height: 63px;
 
-a {
-	display: block;
+	a {
+		display: block;
 
-	text-shadow: 0 0 3px black;
-	color: white;
+		text-shadow: 0 0 3px black;
+		color: white;
 
-&:active {
-	 color: lime;
- }
+		&:active {
+			color: lime;
+		}
 
-&:not([href]) {
-	 color: lime;
-	 border-bottom: 1px solid lime;
-	 box-shadow: 0 1px 4px lime;
- }
-}
+		&:not([href]) {
+			color: lime;
+			border-bottom: 1px solid lime;
+			box-shadow: 0 1px 4px lime;
+		}
+	}
 }
 
 .main-nav__item:not(a[href]) {
@@ -171,7 +171,7 @@ a {
 @media (min-width: $big-mob) {
 	.main-nav__top-block{
 
-		h1 {
+		div {
 			font-size: 2.8rem;
 		}
 	}
@@ -210,7 +210,7 @@ a {
 		border-bottom: none;
 		box-shadow: none;
 
-		h1 {
+		div {
 			padding-right: 0;
 
 			color: lime;

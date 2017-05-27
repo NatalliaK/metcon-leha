@@ -41,6 +41,23 @@
 	border-top: 1px solid white;
 }
 
+.page-header__text {
+	padding: 1rem 2rem;
+
+	font-family: $bebas;
+	color: $light-lime;
+	line-height: 5.5vw;
+	font-size: 3.5vw;
+}
+
+.page-header__link {
+	color: $bg-lime;
+
+	&:hover {
+		color: green;
+	}
+}
+
 @media (min-width: $big-mob) {
 	.page-header__title2 {
 		padding: 1rem;
@@ -52,5 +69,46 @@
 @media (min-width: $tablet) {
 	.page-header__title2 {
 		background: linear-gradient(to bottom, $bg-dark, $grey, $bg-dark);
+	}
+}
+
+@media (min-width: $tablet-land) {
+	.page-header__title2 {
+		order: 0;
+		flex-basis: 100%;
+	}
+
+	.page-header__img-wrap {
+		flex-basis: 46%;
+		align-self: center;
+		height: auto;
+
+		&--even {
+			order: 2;
+		}
+	}
+
+	.page-header__text {
+		padding: 1rem 2rem;
+
+		flex-basis: 45%;
+
+		font-family: $bebas;
+		color: $light-lime;
+		line-height: 3vw;
+		font-size: 2vw;
+
+		&--even {
+			order: 1;
+		}
+
+		p {
+			padding-top: 0.5rem;
+			padding-bottom:0.5rem;
+		}
+
+		li {
+			list-style: square inside;
+		}
 	}
 }
