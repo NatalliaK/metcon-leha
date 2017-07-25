@@ -159,6 +159,18 @@
 	}
 }
 
+figcaption {
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+	text-align: center;
+	font-family: $bebas;
+	color: white;
+	background-color: $bg-blue;
+	border-radius: 5px;
+	box-shadow: 0 0 8px $bg-dark;
+}
+
 .product__footer {
 	margin: 2% 0;
 	padding: 1.5rem;

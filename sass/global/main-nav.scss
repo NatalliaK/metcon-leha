@@ -203,9 +203,9 @@
 	}
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-land) {
 	.main-nav {
-		padding: 0 2.5%;
+		padding: 0 3.5%;
 
 		border-bottom: 3px dotted $grey;
 	}
@@ -221,11 +221,13 @@
 	.main-nav__top-block {
 		border-bottom: none;
 		box-shadow: none;
+		align-self: center;
 
 		div {
 			padding-right: 0;
 
 			color: lime;
+			line-height: 1em;
 		}
 	}
 
@@ -251,9 +253,20 @@
 		}
 
 		a {
-			padding: 0 0.4rem;
+			padding: 0 1rem;
 			height: inherit;
 			line-height: 92px;
+		}
+
+		&--big {
+		 align-self: center;
+			a {
+				padding-top: 33px;
+				padding-bottom: 15px;
+				line-height: 1em;
+
+				height: initial;
+			}
 		}
 	}
 
@@ -262,14 +275,17 @@
 	}
 }
 
-@media (min-width: $tablet-land) {
-	.main-nav {
-		padding: 0 3.5%;
-	}
+@media (min-width: 1106px) {
 
 	.main-nav__item {
-		a {
-			padding: 0 1rem;
-		}
+		&--big {
+	a {
+		padding-top: 0;
+		padding-bottom: 0;
+		line-height: 92px;
+		height: inherit;
 	}
+		 }
+	}
+
 }

@@ -68,7 +68,8 @@
 #carousel-3:checked ~ .control-3,
 #carousel-4:checked ~ .control-4,
 #carousel-5:checked ~ .control-5,
-#carousel-6:checked ~ .control-6 {
+#carousel-6:checked ~ .control-6,
+#carousel-7:checked ~ .control-7 {
 	display: block;
 }
 
@@ -106,7 +107,8 @@
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
 #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
 #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
-#carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet {
+#carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet,
+#carousel-7:checked ~ .control-7 ~ .carousel-indicators li:nth-child(7) .carousel-bullet {
 	color: $lime;
 }
 
@@ -137,6 +139,7 @@
 	#carousel-4:checked ~ .control-4,
 	#carousel-5:checked ~ .control-5,
 	#carousel-6:checked ~ .control-6,
+	#carousel-7:checked ~ .control-7,
 	.carousel-indicators {
 		display: none;
 	}
