@@ -279,13 +279,12 @@
 
 	.main-nav__item {
 		&--big {
-	a {
-		padding-top: 0;
-		padding-bottom: 0;
-		line-height: 92px;
-		height: inherit;
+			a {
+				padding-top: 0;
+				padding-bottom: 0;
+				line-height: 92px;
+				height: inherit;
+			}
+		}
 	}
-		 }
-	}
-
 }
