@@ -55,3 +55,17 @@
 		text-align: center;
 	}
 }
+
+@media (min-width: $desk) {
+	.main {
+		picture {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	.main__text {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}

@@ -41,8 +41,14 @@
 		text-shadow: 0 0 3px black;
 		color: white;
 
+		&:hover {
+			color: lime;
+			transition: all 0.25s ease;
+		}
+
 		&:active {
 			color: lime;
+			transition: all 0.25s ease;
 		}
 
 		&:not([href]) {
@@ -50,6 +56,12 @@
 			border-bottom: 1px solid lime;
 			box-shadow: 0 1px 4px lime;
 		}
+	}
+
+	&--inner {
+		position: relative;
+
+		transition: all 0.4s ease;
 	}
 }
 
@@ -191,9 +203,9 @@
 	}
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-land) {
 	.main-nav {
-		padding: 0 2.5%;
+		padding: 0 3.5%;
 
 		border-bottom: 3px dotted $grey;
 	}
@@ -209,11 +221,13 @@
 	.main-nav__top-block {
 		border-bottom: none;
 		box-shadow: none;
+		align-self: center;
 
 		div {
 			padding-right: 0;
 
 			color: lime;
+			line-height: 1em;
 		}
 	}
 
@@ -226,6 +240,8 @@
 	}
 
 	.main-nav__item {
+		position: relative;
+
 		height: 100%;
 
 		border-bottom: none;
@@ -237,9 +253,20 @@
 		}
 
 		a {
-			padding: 0 0.4rem;
+			padding: 0 1rem;
 			height: inherit;
 			line-height: 92px;
+		}
+
+		&--big {
+		 align-self: center;
+			a {
+				padding-top: 33px;
+				padding-bottom: 15px;
+				line-height: 1em;
+
+				height: initial;
+			}
 		}
 	}
 
@@ -248,14 +275,16 @@
 	}
 }
 
-@media (min-width: $tablet-land) {
-	.main-nav {
-		padding: 0 3.5%;
-	}
+@media (min-width: 1106px) {
 
 	.main-nav__item {
-		a {
-			padding: 0 1rem;
+		&--big {
+			a {
+				padding-top: 0;
+				padding-bottom: 0;
+				line-height: 92px;
+				height: inherit;
+			}
 		}
 	}
 }
